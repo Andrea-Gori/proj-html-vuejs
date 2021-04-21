@@ -1,0 +1,11 @@
+@mixin flex {
+  display: flex;
+}
+
+@mixin margin-auto {
+  margin: 0 auto;
+}
+
+@mixin width-75 {
+  width: 75%;
+}

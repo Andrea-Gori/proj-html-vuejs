@@ -1,0 +1,34 @@
+header {
+  background-image: url(../../assets/img/home-background-hero-scaled.jpg);
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+
+  .container {
+    height: 80px;
+    @include width-75;
+    @include margin-auto;
+    padding-top: 50px;
+    @include flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav-right{
+      @include flex;
+      ul{
+        @include flex;
+        li{
+          font-weight: bold;
+          a{
+            text-decoration: none;
+            color: #fff;
+            margin: 0 15px;
+          }
+        }
+      }
+      i {
+        color: #fff;
+      }
+    }
+  }
+}
