@@ -1,0 +1,44 @@
+main {
+  .container{
+    @include width-75;
+    @include margin-auto;
+    h2{
+      font-size: 48px;
+      margin-top: 150px;
+      text-align: center;
+    }
+    .popular-dishes {
+      @include flex;
+      .card {
+        @include flex;
+        flex-direction: column;
+        align-items: center;
+        width: calc(100% / 3 - 30px);
+        margin: 0 15px;
+        img{
+          width: 100%;
+        }
+        h4 {
+          font-size: 32px;
+        }
+        p.red {
+          font-size: 18px;
+          color: $color-red ;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  div{
+    text-align: center;
+    margin-top: 35px;
+    .btn{
+      @include btn;
+    }
+  }
+  .sconto {
+    img {
+      width: 100%;
+    }
+  }
+}

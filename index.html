@@ -11,7 +11,7 @@
   <body>
     <div id="root">
       <header>
-        <nav class="container">
+        <nav class="nav-container">
           <div class="nav-left">
             <img src="./assets/img/takeout-logo-2x-200x43.png" alt="">
           </div>
@@ -23,18 +23,72 @@
             </ul>
             <i class="fas fa-shopping-cart"></i>
           </div>
+          
+          <div class="right-buttons">
+            <div class="btn-top">
+              <a href=""><i class="fas fa-plus"></i></a>
+            </div>
+            <div class="btn-bot">
+              <span class="btn-white"></a><a href="">
+                <i class="fas fa-cannabis"></i>
+                <p>Demos</p>
+              </a></span>
+              <span class="btn-white"><a href="">
+                <p id="sale">$39</p>
+                <p>On Sale</p>
+              </a></span>
+            </div>
+          </div>
         </nav>
 
+        <div class="container">
+          <div class="title">
+            <h1>Hungry?</h1>
+            <h2>
+              <span class="yellow">Great Food</span><br>
+              Delivered
+            </h2>
+            <a href="" class="btn"><span>view our menu</span><i class="fas fa-arrow-alt-circle-right"></i></a>
+          </div>
+
+          <div class="nav-bottom">
+            <div><i class="far fa-clock"></i><p>24/7 delivery</p></div>
+            <div><i class="fas fa-hamburger"></i><p>over 100 dishes</p></div>
+            <div><i class="fas fa-mobile-alt"></i><p>in app ordering</p></div>
+            <div><i class="fas fa-car"></i><p>fast delivery</p></div>
+          </div>
+        </div>
       </header>
 
+      <main>
+        <section>
+          <div class="container">
+            <h2>Our Most Popular Dishes</h2>
+  
+            <div class="popular-dishes">
+              <div v-for="dish in popularDishes" class="card">
+                <img :src="dish.name" alt="">
+                <h4>{{ dish.title }}</h4>
+                <p class="red">{{ dish.price }}</p>
+              </div>
+            </div>
+            <div>
+              <a href="" class="btn">Start your order<i class="fas fa-arrow-alt-circle-right"></i></a>
+            </div>
+          </div>
+          <div class="sconto">
+            <img src="./assets/img/robo-ondulato.jpg" alt="">
+          </div>
+        </section>
+
+        <section>
+          
+        </section>
+        
 
 
 
-
-
-
-
-
+      </main>
     </div>
 
 

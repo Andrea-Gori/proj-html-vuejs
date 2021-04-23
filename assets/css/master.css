@@ -9,13 +9,20 @@ li {
   list-style: none;
 }
 
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
 header {
   background-image: url(../../assets/img/home-background-hero-scaled.jpg);
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   background-size: cover;
+  background-position: center;
+  position: relative;
 }
-header .container {
+header .nav-container {
   height: 80px;
   width: 75%;
   margin: 0 auto;
@@ -24,20 +31,157 @@ header .container {
   justify-content: space-between;
   align-items: center;
 }
-header .container .nav-right {
+header .nav-container .nav-right {
   display: flex;
 }
-header .container .nav-right ul {
+header .nav-container .nav-right ul {
   display: flex;
 }
-header .container .nav-right ul li {
+header .nav-container .nav-right ul li {
   font-weight: bold;
 }
-header .container .nav-right ul li a {
+header .nav-container .nav-right ul li a {
   text-decoration: none;
   color: #fff;
   margin: 0 15px;
 }
-header .container .nav-right i {
+header .nav-container .nav-right i {
   color: #fff;
+}
+header .nav-container .right-buttons {
+  height: 200px;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+header .nav-container .right-buttons .btn-top {
+  background-color: #bf1e23;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  width: 50px;
+}
+header .nav-container .right-buttons .btn-bot {
+  display: flex;
+  flex-direction: column;
+}
+header .nav-container .right-buttons .btn-bot .btn-white {
+  text-align: center;
+  padding: 3px;
+  background-color: #fff;
+  border-radius: 7px;
+  margin-top: 7px;
+}
+header .nav-container .right-buttons .btn-bot .btn-white p, header .nav-container .right-buttons .btn-bot .btn-white i {
+  color: #33475b;
+}
+header .nav-container .right-buttons .btn-bot .btn-white #sale {
+  color: #90ee90;
+}
+header .container {
+  width: 75%;
+  margin: 0 auto;
+  color: #fff;
+  padding-top: 20%;
+}
+header .container h1 {
+  font-size: 45px;
+}
+header .container h2 {
+  font-size: 90px;
+  margin-bottom: 50px;
+}
+header .container h2 .yellow {
+  color: #FCDC21;
+}
+header .container a.btn {
+  background-color: #bf1e23;
+  padding: 13px 29px;
+  border-radius: 20px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+header .container a.btn i {
+  margin-left: 5px;
+}
+header .container a.btn span {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+header .container .nav-bottom {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  background-color: #fff;
+  padding: 40px 20px 0;
+  color: #000;
+  position: absolute;
+  bottom: -50px;
+}
+header .container .nav-bottom div {
+  display: flex;
+  align-items: flex-end;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+header .container .nav-bottom div p {
+  margin-left: 5px;
+}
+
+main .container {
+  width: 75%;
+  margin: 0 auto;
+}
+main .container h2 {
+  font-size: 48px;
+  margin-top: 150px;
+  text-align: center;
+}
+main .container .popular-dishes {
+  display: flex;
+}
+main .container .popular-dishes .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(100% / 3 - 30px);
+  margin: 0 15px;
+}
+main .container .popular-dishes .card img {
+  width: 100%;
+}
+main .container .popular-dishes .card h4 {
+  font-size: 32px;
+}
+main .container .popular-dishes .card p.red {
+  font-size: 18px;
+  color: #bf1e23;
+  margin-top: 10px;
+}
+main div {
+  text-align: center;
+  margin-top: 35px;
+}
+main div .btn {
+  background-color: #bf1e23;
+  padding: 13px 29px;
+  border-radius: 20px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+main div .btn i {
+  margin-left: 5px;
+}
+main .sconto img {
+  width: 100%;
 }

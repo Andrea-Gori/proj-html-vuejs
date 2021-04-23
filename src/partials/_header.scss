@@ -1,10 +1,12 @@
 header {
   background-image: url(../../assets/img/home-background-hero-scaled.jpg);
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   background-size: cover;
+  background-position: center;
+  position: relative;
 
-  .container {
+  .nav-container {
     height: 80px;
     @include width-75;
     @include margin-auto;
@@ -21,13 +23,94 @@ header {
           font-weight: bold;
           a{
             text-decoration: none;
-            color: #fff;
+            color: $secondary-color-white;
             margin: 0 15px;
           }
         }
       }
       i {
-        color: #fff;
+        color: $secondary-color-white;
+      }
+    }
+    .right-buttons {
+      height: 200px;
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      @include flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      .btn-top {
+        background-color: $color-red;
+        color: $secondary-color-white;
+        border-radius: 50%;
+        @include flex-center;
+        padding: 15px 0;
+        width: 50px
+      }
+      .btn-bot{
+        @include flex;
+        flex-direction: column;
+        .btn-white{
+          text-align: center;
+          padding: 3px;
+          background-color: $secondary-color-white;
+          border-radius: 7px;
+          margin-top: 7px;
+          p, i{
+            
+          color: #33475b;
+          }
+          #sale {
+            color: #90ee90;
+          }
+        }
+      }
+    }
+  }
+  .container {
+    @include width-75;
+    @include margin-auto;
+    color: $secondary-color-white;
+    padding-top: 20%;
+    h1{
+      font-size: 45px;
+    }
+    h2{
+      font-size: 90px;
+      margin-bottom: 50px;
+      .yellow {
+        color: #FCDC21;
+      }
+    }
+    a.btn {
+      @include btn;
+      span {
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    }
+    .nav-bottom {
+      @include width-75;
+      @include flex;
+      justify-content: space-between;
+      height: 100px;
+      background-color: $secondary-color-white;
+      padding: 40px 20px 0;
+      color: #000;
+      position: absolute;
+      bottom: -50px;
+      div{
+        @include flex;
+        align-items: flex-end;
+        text-transform: uppercase;
+        font-weight: bold;
+
+        p {
+          margin-left: 5px;
+        }
+
       }
     }
   }
