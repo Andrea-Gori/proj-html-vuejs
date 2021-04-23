@@ -84,6 +84,18 @@ var app = new Vue({
         immagine: './assets/img/keto-friendly.jpg',
         text: 'keto friendly'
       },
+    ],
+    gnus: [
+      {
+        immagine: './assets/img/pancake-burger.jpg',
+        title: 'NEW: The Pancake Burger',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sodales ipsum vel elementum vehicula. Suspendisse sit amet aliquet ex. Pellentesque commodo tortor vel mi',
+      },
+      {
+        immagine: './assets/img/new-milkshake-menu.jpg',
+        title: 'New Milkshake Menu',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sodales ipsum vel elementum vehicula. Suspendisse sit amet aliquet ex. Pellentesque commodo tortor vel mi',
+      },
     ]
   },
   methods:{

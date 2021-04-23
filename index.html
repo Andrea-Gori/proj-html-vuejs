@@ -122,11 +122,21 @@
 
         <section class="latest-news">
           <div class="container">
+            
             <div class="latest-news-title">
               <h3>Latest News</h3>
             </div>
+
             <div class="latest-news-btn">
               <a href="" class="btn">read more news<i class="fas fa-arrow-alt-circle-right"></i></a>
+            </div>
+          </div>
+          
+          <div class="container">
+            <div class="card" v-for="gnu in gnus">
+              <img :src="gnu.immagine" alt="">
+              <h3>{{ gnu.title }}</h3>
+              <p>{{ gnu.text }}</p>
             </div>
           </div>
         </section>

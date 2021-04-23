@@ -322,3 +322,14 @@ main .latest-news .container .btn {
 main .latest-news .container .btn i {
   margin-left: 5px;
 }
+main .latest-news .card {
+  width: calc(100% / 2 - 20px);
+}
+main .latest-news .card img {
+  width: 100%;
+  height: 100%;
+}
+main .latest-news .card h3, main .latest-news .card p {
+  text-align: center;
+  margin: 25px 0;
+}
