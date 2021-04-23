@@ -29,16 +29,136 @@ main {
       }
     }
   }
-  div{
+
+  div.text-center{
     text-align: center;
     margin-top: 35px;
     .btn{
       @include btn;
     }
   }
+
   .sconto {
     img {
       width: 100%;
+      margin-top: 15px;
+    }
+  }
+
+  .menu-categories {
+    margin-bottom: 70px;
+    .container {
+      @include flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 50px auto;
+      h3 {
+        font-size: 32px;
+        
+      }
+      .btn {
+        @include btn;
+      }
+    }
+    .menu-categories-gallery {
+      @include width-75;
+      @include margin-auto;
+      @include flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .card {
+        width: calc(100% / 4 - 20px);
+        margin: 10px 10px;
+        .immagine{
+          position: relative;
+          font-size: 0;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+          .overlay{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% , -50%);
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            .overlay-text{
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50% , -50%);
+              color: $secondary-color-white;
+              text-transform: uppercase;
+              font-size: 18px;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+      .card-alt {
+        .immagine {
+          @include flex;
+          flex-direction: column;
+          align-items: center;
+          img{
+            width: 70px;
+            height: 70px;
+          }
+        }
+        p {
+          text-transform: uppercase;
+          font-size: 18px;
+          font-weight: bold;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .ordering-app {
+    height: 550px;
+    background-image: url(./../../assets/img/app-ordering-scaled.jpg);
+    background-size: 115%;
+    background-position: center;
+    background-repeat: no-repeat;
+    @include flex;
+    align-items: center;
+    .inner-container{
+      width: 60%;
+      h3 {
+        color: $secondary-color-white;
+        font-size: 37px;
+        text-align: start;
+      }
+      .colored {
+        color: #fcdc31;
+        font-size: 90px;
+      }
+      a{
+        img{
+          height: 70px;
+          width: 175px;
+          margin-top: 45px;
+        }
+      }
+    }
+  }
+
+  .latest-news {
+    margin-bottom: 70px;
+    .container {
+      @include flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 50px auto;
+      h3 {
+        font-size: 32px;
+      }
+      .btn {
+        @include btn;
+      }
     }
   }
 }

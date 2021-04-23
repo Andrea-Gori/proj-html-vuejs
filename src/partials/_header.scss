@@ -25,6 +25,9 @@ header {
             text-decoration: none;
             color: $secondary-color-white;
             margin: 0 15px;
+            &:hover {
+              color: $secondary-color-red;
+            }
           }
         }
       }
@@ -58,12 +61,15 @@ header {
           background-color: $secondary-color-white;
           border-radius: 7px;
           margin-top: 7px;
-          p, i{
-            
-          color: #33475b;
-          }
-          #sale {
-            color: #90ee90;
+          a {
+            @include flex;
+            flex-direction: column;
+            span, i{  
+              color: #33475b;
+            }
+            #sale {
+                color: #90ee90;
+            }
           }
         }
       }
@@ -81,7 +87,7 @@ header {
       font-size: 90px;
       margin-bottom: 50px;
       .yellow {
-        color: #FCDC21;
+        color: $secondary-color-red;
       }
     }
     a.btn {

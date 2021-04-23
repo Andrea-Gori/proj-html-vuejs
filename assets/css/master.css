@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: sans-serif;
+}
+
 li {
   list-style: none;
 }
@@ -45,6 +49,9 @@ header .nav-container .nav-right ul li a {
   color: #fff;
   margin: 0 15px;
 }
+header .nav-container .nav-right ul li a:hover {
+  color: #F76249;
+}
 header .nav-container .nav-right i {
   color: #fff;
 }
@@ -79,10 +86,14 @@ header .nav-container .right-buttons .btn-bot .btn-white {
   border-radius: 7px;
   margin-top: 7px;
 }
-header .nav-container .right-buttons .btn-bot .btn-white p, header .nav-container .right-buttons .btn-bot .btn-white i {
+header .nav-container .right-buttons .btn-bot .btn-white a {
+  display: flex;
+  flex-direction: column;
+}
+header .nav-container .right-buttons .btn-bot .btn-white a span, header .nav-container .right-buttons .btn-bot .btn-white a i {
   color: #33475b;
 }
-header .nav-container .right-buttons .btn-bot .btn-white #sale {
+header .nav-container .right-buttons .btn-bot .btn-white a #sale {
   color: #90ee90;
 }
 header .container {
@@ -99,7 +110,7 @@ header .container h2 {
   margin-bottom: 50px;
 }
 header .container h2 .yellow {
-  color: #FCDC21;
+  color: #F76249;
 }
 header .container a.btn {
   background-color: #bf1e23;
@@ -167,11 +178,11 @@ main .container .popular-dishes .card p.red {
   color: #bf1e23;
   margin-top: 10px;
 }
-main div {
+main div.text-center {
   text-align: center;
   margin-top: 35px;
 }
-main div .btn {
+main div.text-center .btn {
   background-color: #bf1e23;
   padding: 13px 29px;
   border-radius: 20px;
@@ -179,9 +190,135 @@ main div .btn {
   text-transform: uppercase;
   font-weight: bold;
 }
-main div .btn i {
+main div.text-center .btn i {
   margin-left: 5px;
 }
 main .sconto img {
   width: 100%;
+  margin-top: 15px;
+}
+main .menu-categories {
+  margin-bottom: 70px;
+}
+main .menu-categories .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px auto;
+}
+main .menu-categories .container h3 {
+  font-size: 32px;
+}
+main .menu-categories .container .btn {
+  background-color: #bf1e23;
+  padding: 13px 29px;
+  border-radius: 20px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+main .menu-categories .container .btn i {
+  margin-left: 5px;
+}
+main .menu-categories .menu-categories-gallery {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main .menu-categories .menu-categories-gallery .card {
+  width: calc(100% / 4 - 20px);
+  margin: 10px 10px;
+}
+main .menu-categories .menu-categories-gallery .card .immagine {
+  position: relative;
+  font-size: 0;
+}
+main .menu-categories .menu-categories-gallery .card .immagine img {
+  width: 100%;
+  height: 100%;
+}
+main .menu-categories .menu-categories-gallery .card .immagine .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+main .menu-categories .menu-categories-gallery .card .immagine .overlay .overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+}
+main .menu-categories .menu-categories-gallery .card-alt .immagine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .menu-categories .menu-categories-gallery .card-alt .immagine img {
+  width: 70px;
+  height: 70px;
+}
+main .menu-categories .menu-categories-gallery .card-alt p {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+main .ordering-app {
+  height: 550px;
+  background-image: url(./../../assets/img/app-ordering-scaled.jpg);
+  background-size: 115%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+main .ordering-app .inner-container {
+  width: 60%;
+}
+main .ordering-app .inner-container h3 {
+  color: #fff;
+  font-size: 37px;
+  text-align: start;
+}
+main .ordering-app .inner-container .colored {
+  color: #fcdc31;
+  font-size: 90px;
+}
+main .ordering-app .inner-container a img {
+  height: 70px;
+  width: 175px;
+  margin-top: 45px;
+}
+main .latest-news {
+  margin-bottom: 70px;
+}
+main .latest-news .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px auto;
+}
+main .latest-news .container h3 {
+  font-size: 32px;
+}
+main .latest-news .container .btn {
+  background-color: #bf1e23;
+  padding: 13px 29px;
+  border-radius: 20px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+main .latest-news .container .btn i {
+  margin-left: 5px;
 }

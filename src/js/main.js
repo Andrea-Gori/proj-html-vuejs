@@ -32,6 +32,58 @@ var app = new Vue({
         title: 'The Donut Burger',
         price: '$6.99'
       },
+    ],
+    menuCategories:[
+      {
+        immagine: './assets/img/appetizers-menu-background.jpg',
+        text: 'appetizer'
+      },
+      {
+        immagine: './assets/img/burgers-menu-background.jpg',
+        text: 'burgers'
+      },
+      {
+        immagine: './assets/img/pizza-menu-background.jpg',
+        text: 'pizzas'
+      },
+      {
+        immagine: './assets/img/fries-menu-background.jpg',
+        text: 'fries'
+      },
+      {
+        immagine: './assets/img/sides-menu-background.jpg',
+        text: 'fries'
+      },
+      {
+        immagine: './assets/img/desserts-menu-background.jpg',
+        text: 'desserts'
+      },
+      {
+        immagine: './assets/img/beverages-menu-background.jpg',
+        text: 'beverages'
+      },
+      {
+        immagine: './assets/img/specials-menu-background.jpg',
+        text: 'specials'
+      },
+    ],
+    allergeni:[
+      {
+        immagine: './assets/img/vegetarian.jpg',
+        text: 'vegetarian'
+      },
+      {
+        immagine: './assets/img/gluten-free.jpg',
+        text: 'gluten free'
+      },
+      {
+        immagine: './assets/img/dairy-free.jpg',
+        text: 'dairy free'
+      },
+      {
+        immagine: './assets/img/keto-friendly.jpg',
+        text: 'keto friendly'
+      },
     ]
   },
   methods:{

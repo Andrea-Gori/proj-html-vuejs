@@ -18,7 +18,7 @@
 
           <div class="nav-right">
             <ul>
-              <li><a href="">Home <i class="fas fa-angle-down"></i></a></i></li>
+              <li><a href="">Home <i class="fas fa-angle-down"></i></a></li>
               <li v-for="link in collegamenti"><a href="">{{ link.name }}</a></li>
             </ul>
             <i class="fas fa-shopping-cart"></i>
@@ -29,13 +29,13 @@
               <a href=""><i class="fas fa-plus"></i></a>
             </div>
             <div class="btn-bot">
-              <span class="btn-white"></a><a href="">
+              <span class="btn-white"><a href="">
                 <i class="fas fa-cannabis"></i>
-                <p>Demos</p>
+                <span>Demos</span>
               </a></span>
               <span class="btn-white"><a href="">
-                <p id="sale">$39</p>
-                <p>On Sale</p>
+                <span id="sale">$39</span>
+                <span>On Sale</span>
               </a></span>
             </div>
           </div>
@@ -72,7 +72,7 @@
                 <p class="red">{{ dish.price }}</p>
               </div>
             </div>
-            <div>
+            <div class="text-center">
               <a href="" class="btn">Start your order<i class="fas fa-arrow-alt-circle-right"></i></a>
             </div>
           </div>
@@ -81,8 +81,54 @@
           </div>
         </section>
 
-        <section>
-          
+        <section class="menu-categories">
+          <div class="container">
+            <div class="menu-categories-title">
+              <h3>Menu Categories</h3>
+            </div>
+            <div class="menu-categories-button">
+              <a href="" class="btn">view the full menu<i class="fas fa-arrow-alt-circle-right"></i></a>
+            </div>
+          </div>
+
+          <div class="menu-categories-gallery">
+            <div class="card" v-for="categorie in menuCategories">
+              <div class="immagine">
+                <img :src="categorie.immagine" alt="">
+                <div class="overlay">
+                  <span class="overlay-text">{{ categorie.text }}</span>
+                </div>
+              </div>
+            </div>
+            <div class="card card-alt" v-for="allergene in allergeni">
+              <div class="immagine">
+                <img :src="allergene.immagine" alt="">
+              </div>
+              <p>{{ allergene.text }}</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="ordering-app">
+          <div class="container">
+            <div class="inner-container">
+              <h3>Download Our</h3>
+              <h3 class="colored">Ordering App</h3>
+              <a href=""><img src="./assets/img/app-store-badge.png" alt=""></a>
+              <a href=""><img src="./assets/img/play-store-badge.png" alt=""></a>
+            </div>
+          </div>
+        </section>
+
+        <section class="latest-news">
+          <div class="container">
+            <div class="latest-news-title">
+              <h3>Latest News</h3>
+            </div>
+            <div class="latest-news-btn">
+              <a href="" class="btn">read more news<i class="fas fa-arrow-alt-circle-right"></i></a>
+            </div>
+          </div>
         </section>
         
 
