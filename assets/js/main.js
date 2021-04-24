@@ -78,6 +78,71 @@ var app = new Vue({
       immagine: './assets/img/new-milkshake-menu.jpg',
       title: 'New Milkshake Menu',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sodales ipsum vel elementum vehicula. Suspendisse sit amet aliquet ex. Pellentesque commodo tortor vel mi'
+    }],
+    orderOnline: [{
+      text: 'Appetizer'
+    }, {
+      text: 'Burger'
+    }, {
+      text: 'Pizza'
+    }, {
+      text: 'Fries'
+    }, {
+      text: 'Sides'
+    }, {
+      text: 'Dessert'
+    }, {
+      text: 'Beverage'
+    }, {
+      text: 'Specials'
+    }],
+    navigate: [{
+      text: 'Home'
+    }, {
+      text: 'Alternate Home'
+    }, {
+      text: 'Menu'
+    }, {
+      text: 'About'
+    }, {
+      text: 'News'
+    }, {
+      text: 'Contact Us'
+    }, {
+      text: 'Cart'
+    }],
+    information: [{
+      text: 'My Account'
+    }, {
+      text: 'Terms Of Service'
+    }, {
+      text: 'Privacy Policy'
+    }, {
+      button: './assets/img/app-store-badge.png'
+    }, {
+      button: './assets/img/play-store-badge.png'
+    }],
+    openingHours: [{
+      day: 'Mon - ',
+      hours: '10AM to 11PM'
+    }, {
+      day: 'Tue - ',
+      hours: '10AM to 11PM'
+    }, {
+      day: 'Wed - ',
+      hours: '10AM to 11PM'
+    }, {
+      day: 'thur - ',
+      hours: '10AM to 11PM'
+    }, {
+      day: 'Fri - ',
+      hours: '10AM to 11PM'
+    }, {
+      day: 'Sat - ',
+      hours: '10AM to 1PM'
+    }, {
+      day: 'Sun - ',
+      hours: '11AM to 10PM'
     }]
   },
   methods: {}

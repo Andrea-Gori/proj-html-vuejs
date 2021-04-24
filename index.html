@@ -140,11 +140,63 @@
             </div>
           </div>
         </section>
-        
-
-
-
       </main>
+
+      <footer>
+        <div class="container">
+          <div id="order-online" class="lists">
+            <h4>Order Online</h4>
+            <ul>
+              <li v-for="item in orderOnline">
+                <a href="">{{ item.text }}</a>
+              </li>
+            </ul>
+          </div>
+          
+          <div id="navigate" class="lists">
+            <h4>Navigate</h4>
+            <ul>
+              <li v-for="item in navigate">
+                <a href="">{{ item.text }}</a>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="lists">
+            <h4>Information</h4>
+            <ul>
+              <li v-for="item in information">
+                <a href="">{{ item.text }}</a>
+                <a href="" id="information"><img :src="item.button" alt=""></a>
+                
+              </li>
+              
+            </ul>
+            
+          </div>
+          
+          <div id="opening-hours" class="lists">
+            <h4>Opening Hours</h4>
+            <ul>
+              <li v-for="item in openingHours">
+                {{ item.day }}<span class="yellow">{{ item.hours }}</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="lists">
+            <h4 class="voucher-title">Voucher</h4>
+            <img id="voucher" src="./assets/img/footer-coupon.png" alt="">
+            <div class="voucher-text">
+              <h3>Just Use The Code</h3>
+              <h3 class="yellow">FIRST ORDER</h3>
+              <h3>At Checkout</h3>
+            </div>
+          </div>
+          
+          
+        </div>
+      </footer>
     </div>
 
 

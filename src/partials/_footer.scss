@@ -1,0 +1,51 @@
+footer{
+  background-image: url(./../../assets/img/footer-background-scaled.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  .container {
+    @include flex;
+    justify-content: space-between;
+    @include width-75;
+    @include margin-auto;
+    .lists{
+      width: calc(100% / 5 - 40px);
+      padding-top: 100px;
+      margin: 0 20px;
+      h4{
+        color: $secondary-color-white;
+        text-transform: uppercase;
+        padding-bottom: 30px;
+      }
+      li{
+        font-weight: bold;
+        padding-bottom: 20px;
+        color: $secondary-color-white;
+        #information{
+          height: 50px;
+          width: 150px;
+          img{
+            width: 80%;
+          }
+        }
+        .yellow{
+          color: $secondary-color-red;
+        }
+      }
+      #voucher {
+        height: 160px;
+      }
+      .voucher-title{
+        text-align: center;
+      }
+      .voucher-text{
+        color: $secondary-color-white;
+        text-align: center;
+        .yellow{
+          color: $secondary-color-red;
+        }
+      }
+    }
+    
+  }
+}

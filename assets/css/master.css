@@ -333,3 +333,54 @@ main .latest-news .card h3, main .latest-news .card p {
   text-align: center;
   margin: 25px 0;
 }
+
+footer {
+  background-image: url(./../../assets/img/footer-background-scaled.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  margin: 0 auto;
+}
+footer .container .lists {
+  width: calc(100% / 5 - 40px);
+  padding-top: 100px;
+  margin: 0 20px;
+}
+footer .container .lists h4 {
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+footer .container .lists li {
+  font-weight: bold;
+  padding-bottom: 20px;
+  color: #fff;
+}
+footer .container .lists li #information {
+  height: 50px;
+  width: 150px;
+}
+footer .container .lists li #information img {
+  width: 80%;
+}
+footer .container .lists li .yellow {
+  color: #F76249;
+}
+footer .container .lists #voucher {
+  height: 160px;
+}
+footer .container .lists .voucher-title {
+  text-align: center;
+}
+footer .container .lists .voucher-text {
+  color: #fff;
+  text-align: center;
+}
+footer .container .lists .voucher-text .yellow {
+  color: #F76249;
+}
