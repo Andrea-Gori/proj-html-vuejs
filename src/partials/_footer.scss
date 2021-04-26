@@ -2,7 +2,8 @@ footer{
   background-image: url(./../../assets/img/footer-background-scaled.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
-  height: 100vh;
+  background-position: 0 -70px;
+  padding-bottom: 280px;
   .container {
     @include flex;
     justify-content: space-between;
@@ -21,20 +22,25 @@ footer{
         font-weight: bold;
         padding-bottom: 20px;
         color: $secondary-color-white;
+        a{
+          &:hover{
+            color: $secondary-color-red;
+          }
+        }
         #information{
           height: 50px;
           width: 150px;
           img{
-            width: 80%;
+            width: 65%;
+            border: 2px solid $secondary-color-white;
+            border-radius: 8px;
           }
         }
         .yellow{
           color: $secondary-color-red;
         }
       }
-      #voucher {
-        height: 160px;
-      }
+      
       .voucher-title{
         text-align: center;
       }
@@ -46,6 +52,80 @@ footer{
         }
       }
     }
+    .list-right{
+      @include flex;
+      flex-direction: column;
+      align-items: center;
+      #voucher {
+        height: 160px;
+        margin-bottom: 15px;
+      }
+    }
     
+    
+  }
+  .footer-bottom {
+    @include flex-center ;
+    width: 100%;
+    margin-top: 70px;
+    flex-direction: column;
+    img{
+      width: 200px;
+      margin-bottom: 30px;
+    }
+    h3{
+      font-size: 45px;
+    }
+    #sign-up{
+      color: $secondary-color-white;
+      margin: 15px 0 30px;
+      font-size: 15px;
+    }
+    .yellow{
+      color: $secondary-color-red;
+    }
+    .subscribe{
+      @include flex;
+      width: 100%;;
+      flex-direction: column;
+      align-items: center;
+      input{
+        width: 45%;
+        height: 45px;
+        padding: 0 15px;
+        border-radius: 25px;
+      }
+      .btn{
+        @include btn;
+        width: 45%;
+        text-align: center;
+      }
+    }
+    .social{
+      ul{
+        @include flex;
+        color: $secondary-color-white;
+        li{
+          margin: 40px 15px 20px;
+        }
+      }
+    }
+    #copyright{
+      font-size: 12px;
+    }
+  }
+}
+.scroll-up{
+  height: 35px;
+  width: 48px;
+  position: fixed;
+  bottom: 0;
+  right: 90px;
+  background-color: #333;
+  color: $secondary-color-white;
+  border-radius: 7px 7px 0 0;
+  @include flex-center;
+  &:hover{
+    background-color: #bf1e23;
   }
 }

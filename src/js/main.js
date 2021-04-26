@@ -118,7 +118,7 @@ var app = new Vue({
             text: 'Dessert',
           },
           {
-            text: 'Beverage',
+            text: 'Beverages',
           },
           {
             text: 'Specials',
@@ -193,7 +193,38 @@ var app = new Vue({
             day:'Sun - ',
             hours: '11AM to 10PM'
           }
-        ],        
+        ],  
+    
+    socials: [
+      {
+        icon: 'fab fa-facebook-f',
+        link:''
+      },
+      {
+        icon: 'fab fa-twitter',
+        link:''
+      },
+      {
+        icon: 'fab fa-instagram',
+        link:''
+      },
+      {
+        icon: 'fab fa-linkedin-in',
+        link:''
+      },
+      {
+        icon: 'fas fa-rss',
+        link:''
+      },
+      {
+        icon: 'fab fa-youtube',
+        link:''
+      },
+      {
+        icon: 'far fa-envelope',
+        link:''
+      },
+    ]
   },
 
   methods:{

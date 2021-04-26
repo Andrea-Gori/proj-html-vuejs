@@ -10,7 +10,7 @@
   </head>
   <body>
     <div id="root">
-      <header>
+      <header id="top">
         <nav class="nav-container">
           <div class="nav-left">
             <img src="./assets/img/takeout-logo-2x-200x43.png" alt="">
@@ -165,10 +165,11 @@
           <div class="lists">
             <h4>Information</h4>
             <ul>
-              <li v-for="item in information">
+              <li v-for="item in information" v-if="item.text">
                 <a href="">{{ item.text }}</a>
+              </li>
+              <li v-for="item in information" v-if="item.button">
                 <a href="" id="information"><img :src="item.button" alt=""></a>
-                
               </li>
               
             </ul>
@@ -184,7 +185,7 @@
             </ul>
           </div>
           
-          <div class="lists">
+          <div class="lists list-right">
             <h4 class="voucher-title">Voucher</h4>
             <img id="voucher" src="./assets/img/footer-coupon.png" alt="">
             <div class="voucher-text">
@@ -193,13 +194,36 @@
               <h3>At Checkout</h3>
             </div>
           </div>
-          
-          
         </div>
+
+        <div class="container">
+          <div class="footer-bottom">
+            <img src="./assets/img/takeout-logo.png" alt="">
+            <h3 class="yellow">Stay in the Loop</h3>
+            <p id="sign-up">Sign up to receive up to date news and offers directly in your inbox:</p>
+  
+            <div class="subscribe">
+              <input type="text" placeholder="you@mail.com">
+              <a href="" class="btn">subscrive</a>
+            </div>
+  
+            <div class="social">
+              <ul>
+                <li v-for="icon in socials"><a href=""><i :class="icon.icon"></i></a></li>
+              </ul>
+            </div>
+            <p id="copyright" class="yellow">© Copyright 2012 - 2021 | Avada Theme by <a href="">ThemeFusion</a> | All Rights Reserved | Powered by <a href="">WordPress</a></p>
+          </div>
+        </div>
+
+        <div class="scroll-up">
+          <a href="#top"><i class="fas fa-chevron-up"></i></a>
+        </div>
+        
       </footer>
     </div>
 
-
+    
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="./assets/js/main.js"></script>
   </body>
